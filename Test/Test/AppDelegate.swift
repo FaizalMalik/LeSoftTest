@@ -7,17 +7,30 @@
 
 import UIKit
 import CoreData
+import SVProgressHUD
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.setupSVProgressHUD()
+        
         return true
     }
 
+    func setupSVProgressHUD(){
+        
+        SVProgressHUD.setHapticsEnabled(true)        
+        SVProgressHUD.setImageViewSize(CGSize(width: 50, height: 50))
+        SVProgressHUD.setMinimumSize(CGSize(width: 100, height: 100))
+        SVProgressHUD.setShouldTintImages(false)
+        SVProgressHUD.setMinimumDismissTimeInterval(0.5)
+        
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

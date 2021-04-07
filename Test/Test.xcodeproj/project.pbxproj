@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA94118261DF3DB0061DB5F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA94117261DF3DB0061DB5F /* UserTableViewCell.swift */; };
+		BFA94123261DF5BD0061DB5F /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA94121261DF5BD0061DB5F /* EmptyTableViewCell.swift */; };
+		BFA94124261DF5BD0061DB5F /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA94122261DF5BD0061DB5F /* EmptyTableViewCell.xib */; };
 		BFC13A50261DB151002DC936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A4F261DB151002DC936 /* AppDelegate.swift */; };
 		BFC13A52261DB151002DC936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A51261DB151002DC936 /* SceneDelegate.swift */; };
-		BFC13A54261DB151002DC936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A53261DB151002DC936 /* ViewController.swift */; };
+		BFC13A54261DB151002DC936 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A53261DB151002DC936 /* HomeVC.swift */; };
 		BFC13A57261DB151002DC936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC13A55261DB151002DC936 /* Main.storyboard */; };
 		BFC13A5A261DB151002DC936 /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A58261DB151002DC936 /* Test.xcdatamodeld */; };
 		BFC13A5C261DB153002DC936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC13A5B261DB153002DC936 /* Assets.xcassets */; };
@@ -28,16 +31,24 @@
 		BFC13A93261DB7D0002DC936 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A90261DB7D0002DC936 /* StringExt.swift */; };
 		BFC13A94261DB7D0002DC936 /* NSDataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A91261DB7D0002DC936 /* NSDataExt.swift */; };
 		BFC13A95261DB7D0002DC936 /* GeneralExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A92261DB7D0002DC936 /* GeneralExt.swift */; };
+		BFC13A99261DB853002DC936 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A98261DB853002DC936 /* HomeService.swift */; };
+		BFC13A9D261DB868002DC936 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A9C261DB868002DC936 /* General.swift */; };
+		BFC13AA4261DC488002DC936 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13AA3261DC488002DC936 /* HomeViewModel.swift */; };
+		BFC13AA7261DC4C5002DC936 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13AA6261DC4C5002DC936 /* TableViewDataSource.swift */; };
+		BFC13AAC261DC76F002DC936 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13AAB261DC76F002DC936 /* DynamicValue.swift */; };
 		D1A5D65BB76B348784DA6DB1 /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D062B1B3965881216C4E90 /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		66A2224EA5FDB76A24959657 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		88E94FA3AA4A027CA878378F /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
+		BFA94117261DF3DB0061DB5F /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		BFA94121261DF5BD0061DB5F /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		BFA94122261DF5BD0061DB5F /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		BFC13A4C261DB151002DC936 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC13A4F261DB151002DC936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC13A51261DB151002DC936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFC13A53261DB151002DC936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFC13A53261DB151002DC936 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BFC13A56261DB151002DC936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFC13A59261DB151002DC936 /* Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
 		BFC13A5B261DB153002DC936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +68,11 @@
 		BFC13A90261DB7D0002DC936 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		BFC13A91261DB7D0002DC936 /* NSDataExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataExt.swift; sourceTree = "<group>"; };
 		BFC13A92261DB7D0002DC936 /* GeneralExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralExt.swift; sourceTree = "<group>"; };
+		BFC13A98261DB853002DC936 /* HomeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		BFC13A9C261DB868002DC936 /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		BFC13AA3261DC488002DC936 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BFC13AA6261DC4C5002DC936 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		BFC13AAB261DC76F002DC936 /* DynamicValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
 		F0D062B1B3965881216C4E90 /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +95,40 @@
 				88E94FA3AA4A027CA878378F /* Pods-Test.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFA94116261DF3C00061DB5F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BFA94120261DF5A20061DB5F /* EmptyCell */,
+				BFA9412B261DFAAD0061DB5F /* Home */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BFA9411F261DF5940061DB5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFA94116261DF3C00061DB5F /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFA94120261DF5A20061DB5F /* EmptyCell */ = {
+			isa = PBXGroup;
+			children = (
+				BFA94121261DF5BD0061DB5F /* EmptyTableViewCell.swift */,
+				BFA94122261DF5BD0061DB5F /* EmptyTableViewCell.xib */,
+			);
+			path = EmptyCell;
+			sourceTree = "<group>";
+		};
+		BFA9412B261DFAAD0061DB5F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BFA94117261DF3DB0061DB5F /* UserTableViewCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		BFC13A43261DB151002DC936 = {
@@ -104,9 +154,12 @@
 			children = (
 				BFC13A4F261DB151002DC936 /* AppDelegate.swift */,
 				BFC13A51261DB151002DC936 /* SceneDelegate.swift */,
-				BFC13A53261DB151002DC936 /* ViewController.swift */,
-				BFC13A8F261DB7D0002DC936 /* Extentions */,
 				BFC13A6E261DB6FC002DC936 /* Models */,
+				BFA9411F261DF5940061DB5F /* Views */,
+				BFC13A9F261DBC9A002DC936 /* Scenes */,
+				BFC13A9B261DB868002DC936 /* Define */,
+				BFC13A97261DB853002DC936 /* Service */,
+				BFC13A8F261DB7D0002DC936 /* Extentions */,
 				BFC13A55261DB151002DC936 /* Main.storyboard */,
 				BFC13A5B261DB153002DC936 /* Assets.xcassets */,
 				BFC13A5D261DB153002DC936 /* LaunchScreen.storyboard */,
@@ -161,11 +214,46 @@
 		BFC13A8F261DB7D0002DC936 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				BFC13A92261DB7D0002DC936 /* GeneralExt.swift */,
 				BFC13A90261DB7D0002DC936 /* StringExt.swift */,
 				BFC13A91261DB7D0002DC936 /* NSDataExt.swift */,
-				BFC13A92261DB7D0002DC936 /* GeneralExt.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		BFC13A97261DB853002DC936 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BFC13A98261DB853002DC936 /* HomeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BFC13A9B261DB868002DC936 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				BFC13AA6261DC4C5002DC936 /* TableViewDataSource.swift */,
+				BFC13AAB261DC76F002DC936 /* DynamicValue.swift */,
+				BFC13A9C261DB868002DC936 /* General.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		BFC13A9F261DBC9A002DC936 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BFC13AA9261DC6DD002DC936 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BFC13AA9261DC6DD002DC936 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BFC13A53261DB151002DC936 /* HomeVC.swift */,
+				BFC13AA3261DC488002DC936 /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		C985D19B24EE09E5130FA3B3 /* Frameworks */ = {
@@ -236,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC13A5F261DB153002DC936 /* LaunchScreen.storyboard in Resources */,
+				BFA94124261DF5BD0061DB5F /* EmptyTableViewCell.xib in Resources */,
 				BFC13A5C261DB153002DC936 /* Assets.xcassets in Resources */,
 				BFC13A57261DB151002DC936 /* Main.storyboard in Resources */,
 			);
@@ -292,22 +381,29 @@
 			files = (
 				BFC13A95261DB7D0002DC936 /* GeneralExt.swift in Sources */,
 				BFC13A7D261DB6FC002DC936 /* RequestSerializer.swift in Sources */,
-				BFC13A54261DB151002DC936 /* ViewController.swift in Sources */,
+				BFC13A54261DB151002DC936 /* HomeVC.swift in Sources */,
 				BFC13A93261DB7D0002DC936 /* StringExt.swift in Sources */,
+				BFA94118261DF3DB0061DB5F /* UserTableViewCell.swift in Sources */,
 				BFC13A81261DB6FC002DC936 /* URL.swift in Sources */,
 				BFC13A5A261DB151002DC936 /* Test.xcdatamodeld in Sources */,
 				BFC13A7F261DB6FC002DC936 /* ApiManager.swift in Sources */,
+				BFC13A99261DB853002DC936 /* HomeService.swift in Sources */,
+				BFC13AA4261DC488002DC936 /* HomeViewModel.swift in Sources */,
 				BFC13A94261DB7D0002DC936 /* NSDataExt.swift in Sources */,
 				BFC13A80261DB6FC002DC936 /* ResponseSerializer.swift in Sources */,
 				BFC13A84261DB6FC002DC936 /* Addres.swift in Sources */,
+				BFC13AA7261DC4C5002DC936 /* TableViewDataSource.swift in Sources */,
 				BFC13A50261DB151002DC936 /* AppDelegate.swift in Sources */,
 				BFC13A7E261DB6FC002DC936 /* Error.swift in Sources */,
 				BFC13A82261DB6FC002DC936 /* Api.swift in Sources */,
+				BFC13A9D261DB868002DC936 /* General.swift in Sources */,
 				BFC13A87261DB6FC002DC936 /* LeApiCalls.swift in Sources */,
 				BFC13A52261DB151002DC936 /* SceneDelegate.swift in Sources */,
 				BFC13A85261DB6FC002DC936 /* Company.swift in Sources */,
 				BFC13A83261DB6FC002DC936 /* User.swift in Sources */,
 				BFC13A86261DB6FC002DC936 /* Geo.swift in Sources */,
+				BFA94123261DF5BD0061DB5F /* EmptyTableViewCell.swift in Sources */,
+				BFC13AAC261DC76F002DC936 /* DynamicValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
