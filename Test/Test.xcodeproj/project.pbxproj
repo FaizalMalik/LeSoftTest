@@ -12,6 +12,7 @@
 		BFA94124261DF5BD0061DB5F /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA94122261DF5BD0061DB5F /* EmptyTableViewCell.xib */; };
 		BFA9412F261DFBF40061DB5F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9412E261DFBF40061DB5F /* HomeRouter.swift */; };
 		BFA94134261DFCE00061DB5F /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA94133261DFCE00061DB5F /* UserDetailVC.swift */; };
+		BFA9413C261E25700061DB5F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9413B261E25700061DB5F /* Reachability.swift */; };
 		BFC13A50261DB151002DC936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A4F261DB151002DC936 /* AppDelegate.swift */; };
 		BFC13A52261DB151002DC936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A51261DB151002DC936 /* SceneDelegate.swift */; };
 		BFC13A54261DB151002DC936 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A53261DB151002DC936 /* HomeVC.swift */; };
@@ -49,6 +50,7 @@
 		BFA94122261DF5BD0061DB5F /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		BFA9412E261DFBF40061DB5F /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		BFA94133261DFCE00061DB5F /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
+		BFA9413B261E25700061DB5F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		BFC13A4C261DB151002DC936 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC13A4F261DB151002DC936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC13A51261DB151002DC936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,22 @@
 			path = UserDetail;
 			sourceTree = "<group>";
 		};
+		BFA94139261E25590061DB5F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFA9413A261E25700061DB5F /* Reachability */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BFA9413A261E25700061DB5F /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				BFA9413B261E25700061DB5F /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		BFC13A43261DB151002DC936 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +184,7 @@
 			children = (
 				BFC13A4F261DB151002DC936 /* AppDelegate.swift */,
 				BFC13A51261DB151002DC936 /* SceneDelegate.swift */,
+				BFA94139261E25590061DB5F /* Helpers */,
 				BFC13A6E261DB6FC002DC936 /* Models */,
 				BFA9411F261DF5940061DB5F /* Views */,
 				BFC13A9F261DBC9A002DC936 /* Scenes */,
@@ -254,8 +273,8 @@
 		BFC13A9F261DBC9A002DC936 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BFA94132261DFCC30061DB5F /* UserDetail */,
 				BFC13AA9261DC6DD002DC936 /* Home */,
+				BFA94132261DFCC30061DB5F /* UserDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -407,6 +426,7 @@
 				BFC13A80261DB6FC002DC936 /* ResponseSerializer.swift in Sources */,
 				BFC13A84261DB6FC002DC936 /* Addres.swift in Sources */,
 				BFA94134261DFCE00061DB5F /* UserDetailVC.swift in Sources */,
+				BFA9413C261E25700061DB5F /* Reachability.swift in Sources */,
 				BFC13AA7261DC4C5002DC936 /* TableViewDataSource.swift in Sources */,
 				BFC13A50261DB151002DC936 /* AppDelegate.swift in Sources */,
 				BFC13A7E261DB6FC002DC936 /* Error.swift in Sources */,
