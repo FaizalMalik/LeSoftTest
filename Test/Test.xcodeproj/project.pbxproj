@@ -10,6 +10,8 @@
 		BFA94118261DF3DB0061DB5F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA94117261DF3DB0061DB5F /* UserTableViewCell.swift */; };
 		BFA94123261DF5BD0061DB5F /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA94121261DF5BD0061DB5F /* EmptyTableViewCell.swift */; };
 		BFA94124261DF5BD0061DB5F /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA94122261DF5BD0061DB5F /* EmptyTableViewCell.xib */; };
+		BFA9412F261DFBF40061DB5F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9412E261DFBF40061DB5F /* HomeRouter.swift */; };
+		BFA94134261DFCE00061DB5F /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA94133261DFCE00061DB5F /* UserDetailVC.swift */; };
 		BFC13A50261DB151002DC936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A4F261DB151002DC936 /* AppDelegate.swift */; };
 		BFC13A52261DB151002DC936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A51261DB151002DC936 /* SceneDelegate.swift */; };
 		BFC13A54261DB151002DC936 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC13A53261DB151002DC936 /* HomeVC.swift */; };
@@ -45,6 +47,8 @@
 		BFA94117261DF3DB0061DB5F /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		BFA94121261DF5BD0061DB5F /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 		BFA94122261DF5BD0061DB5F /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		BFA9412E261DFBF40061DB5F /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		BFA94133261DFCE00061DB5F /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
 		BFC13A4C261DB151002DC936 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC13A4F261DB151002DC936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC13A51261DB151002DC936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +133,14 @@
 				BFA94117261DF3DB0061DB5F /* UserTableViewCell.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		BFA94132261DFCC30061DB5F /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BFA94133261DFCE00061DB5F /* UserDetailVC.swift */,
+			);
+			path = UserDetail;
 			sourceTree = "<group>";
 		};
 		BFC13A43261DB151002DC936 = {
@@ -242,6 +254,7 @@
 		BFC13A9F261DBC9A002DC936 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BFA94132261DFCC30061DB5F /* UserDetail */,
 				BFC13AA9261DC6DD002DC936 /* Home */,
 			);
 			path = Scenes;
@@ -252,6 +265,7 @@
 			children = (
 				BFC13A53261DB151002DC936 /* HomeVC.swift */,
 				BFC13AA3261DC488002DC936 /* HomeViewModel.swift */,
+				BFA9412E261DFBF40061DB5F /* HomeRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -392,6 +406,7 @@
 				BFC13A94261DB7D0002DC936 /* NSDataExt.swift in Sources */,
 				BFC13A80261DB6FC002DC936 /* ResponseSerializer.swift in Sources */,
 				BFC13A84261DB6FC002DC936 /* Addres.swift in Sources */,
+				BFA94134261DFCE00061DB5F /* UserDetailVC.swift in Sources */,
 				BFC13AA7261DC4C5002DC936 /* TableViewDataSource.swift in Sources */,
 				BFC13A50261DB151002DC936 /* AppDelegate.swift in Sources */,
 				BFC13A7E261DB6FC002DC936 /* Error.swift in Sources */,
@@ -404,6 +419,7 @@
 				BFC13A86261DB6FC002DC936 /* Geo.swift in Sources */,
 				BFA94123261DF5BD0061DB5F /* EmptyTableViewCell.swift in Sources */,
 				BFC13AAC261DC76F002DC936 /* DynamicValue.swift in Sources */,
+				BFA9412F261DFBF40061DB5F /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

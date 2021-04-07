@@ -88,6 +88,151 @@
             </objects>
             <point key="canvasLocation" x="923.1884057971015" y="88.392857142857139"/>
         </scene>
+        <!--User DetailVC-->
+        <scene sceneID="e2i-EW-1Zk">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailVC" id="6wD-ZV-X4L" customClass="UserDetailVC" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0nA-qn-8WB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="et9-pD-7cb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="208-xv-tLo">
+                                        <rect key="frame" x="167" y="15" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="1AL-l7-GC4"/>
+                                            <constraint firstAttribute="height" constant="80" id="v8j-0K-AIB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAL-Ju-XUY">
+                                        <rect key="frame" x="186" y="100" width="42" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QP0-P5-7I8">
+                                        <rect key="frame" x="0.0" y="138" width="414" height="270"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-IY-gRW" customClass="PaddingLabel" customModule="Test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyT-Ur-gHF" customClass="PaddingLabel" customModule="Test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="56.5" width="414" height="28"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noE-aI-T9L" customClass="PaddingLabel" customModule="Test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="99.5" width="414" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPA-gD-hhy" customClass="PaddingLabel" customModule="Test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="142.5" width="414" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u03-yN-lCX" customClass="PaddingLabel" customModule="Test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="185.5" width="414" height="41.5"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFA-ln-cJe" customClass="PaddingLabel" customModule="Test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="242" width="414" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QP0-P5-7I8" secondAttribute="trailing" id="0Ir-FN-sQr"/>
+                                    <constraint firstItem="WAL-Ju-XUY" firstAttribute="top" secondItem="208-xv-tLo" secondAttribute="bottom" constant="5" id="5ai-em-QIe"/>
+                                    <constraint firstItem="WAL-Ju-XUY" firstAttribute="centerX" secondItem="et9-pD-7cb" secondAttribute="centerX" id="FbE-jE-zHB"/>
+                                    <constraint firstItem="QP0-P5-7I8" firstAttribute="leading" secondItem="et9-pD-7cb" secondAttribute="leading" id="HSa-NT-Z4d"/>
+                                    <constraint firstItem="208-xv-tLo" firstAttribute="centerX" secondItem="et9-pD-7cb" secondAttribute="centerX" id="dC3-eJ-sce"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QP0-P5-7I8" secondAttribute="bottom" constant="10" id="hBB-Xb-vDw"/>
+                                    <constraint firstItem="208-xv-tLo" firstAttribute="top" secondItem="et9-pD-7cb" secondAttribute="top" constant="15" id="jVj-hf-JcT"/>
+                                    <constraint firstItem="QP0-P5-7I8" firstAttribute="top" secondItem="WAL-Ju-XUY" secondAttribute="bottom" constant="20" id="lrJ-SB-7d3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X6P-a5-cIq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X6P-a5-cIq" firstAttribute="bottom" secondItem="et9-pD-7cb" secondAttribute="bottom" id="DSr-jO-GIy"/>
+                            <constraint firstItem="et9-pD-7cb" firstAttribute="leading" secondItem="X6P-a5-cIq" secondAttribute="leading" id="GfR-xq-0d6"/>
+                            <constraint firstItem="X6P-a5-cIq" firstAttribute="trailing" secondItem="et9-pD-7cb" secondAttribute="trailing" id="Hjz-6q-yLC"/>
+                            <constraint firstItem="et9-pD-7cb" firstAttribute="top" secondItem="X6P-a5-cIq" secondAttribute="top" id="inA-Ej-lzK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCompanyInfo" destination="eFA-ln-cJe" id="Tfi-He-rXu"/>
+                        <outlet property="lblEmail" destination="noE-aI-T9L" id="IfR-a8-0aC"/>
+                        <outlet property="lblName" destination="WAL-Ju-XUY" id="5Z3-dl-tnB"/>
+                        <outlet property="lblUserAddress" destination="dPA-gD-hhy" id="vy2-Ad-npy"/>
+                        <outlet property="lblUserName" destination="gyT-Ur-gHF" id="3G6-5F-1Dl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qb3-l4-ChQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713.0434782608697" y="87.723214285714278"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="x13-gr-h8b">
             <objects>
@@ -107,7 +252,31 @@
             <point key="canvasLocation" x="13.043478260869566" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Vc6-IY-gRW">
+            <size key="intrinsicContentSize" width="117" height="41.5"/>
+        </designable>
+        <designable name="dPA-gD-hhy">
+            <size key="intrinsicContentSize" width="114.5" height="28"/>
+        </designable>
+        <designable name="eFA-ln-cJe">
+            <size key="intrinsicContentSize" width="117" height="28"/>
+        </designable>
+        <designable name="gyT-Ur-gHF">
+            <size key="intrinsicContentSize" width="90" height="28"/>
+        </designable>
+        <designable name="noE-aI-T9L">
+            <size key="intrinsicContentSize" width="58.5" height="28"/>
+        </designable>
+        <designable name="u03-yN-lCX">
+            <size key="intrinsicContentSize" width="157" height="41.5"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="placeholder" width="100" height="100"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

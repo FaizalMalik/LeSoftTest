@@ -22,19 +22,41 @@ class HomeVC: UIViewController {
 
     private var datasourceHome :TableViewDataSource<UserTableViewCell,User>!
     
+   
+    //router
+    lazy var router:HomeRouter = {
+        return HomeRouter(viewModel: viewModel)
+    }()
+    enum Routes:String {
+        case userDetail
+    }
+    
+    //MARK: UIVIew Life Cycles
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupView()
         bindViewModel()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.setupNav()
+    }
+    
+    
     //MARK: Setup Methods
     func setupView() {
-        self.navigationItem.title = "Home"
+       
+        self.setupNav()
+        //TableView setup
         self.tableViewHome.tableFooterView = UIView()
+        self.tableViewHome.delegate = self
         
     }
+    func setupNav(){
+        self.navigationItem.title = "Home"
+    }
+    
     func bindViewModel(){
        
         //Binding the showloading status
@@ -102,6 +124,12 @@ extension HomeVC:UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return 70
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+        let user = self.viewModel.usersdatasourceModels.value[indexPath.row]
+        
+        self.router.route(to: Routes.userDetail.rawValue, from: self, parameters: ["user":user])
     }
 }
 

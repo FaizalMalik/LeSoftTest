@@ -17,7 +17,7 @@ class HomeViewModel: HomeViewModelDelegate{
     //MARK: Properties
     var usersdatasourceModels = DynamicValue.init([User]())
     var service :HomeServiceProtocol
-    var showLoadingStatus = DynamicValue<(Bool,String)>.init((false,"Loading"))
+    var showLoadingStatus = DynamicValue<(Bool,String)>.init((false,"Loading.."))
   
     init(service:HomeServiceProtocol = HomeService.shared) {
     

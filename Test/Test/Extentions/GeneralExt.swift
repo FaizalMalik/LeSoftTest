@@ -68,3 +68,72 @@ public extension UITableView {
         return self.dequeueReusableCell(withIdentifier: type.className, for: indexPath) as! T
     }
 }
+
+//MARK: Storyboard InstantiateType Extension
+
+public enum StoryboardInstantiateType {
+    case initial
+    case identifier(String)
+}
+
+public protocol StoryboardInstantiatable {
+    static var storyboardName: String { get }
+    static var storyboardBundle: Bundle { get }
+    static var instantiateType: StoryboardInstantiateType { get }
+}
+
+public extension StoryboardInstantiatable where Self: NSObject {
+     static var storyboardName: String {
+        return className
+    }
+
+     static var storyboardBundle: Bundle {
+        return Bundle(for: self)
+    }
+
+    private static var storyboard: UIStoryboard {
+        return UIStoryboard(name: storyboardName, bundle: storyboardBundle)
+    }
+
+     static var instantiateType: StoryboardInstantiateType {
+        return .identifier(className)
+    }
+}
+
+public extension StoryboardInstantiatable where Self: UIViewController {
+     static func instantiate() -> Self {
+        switch instantiateType {
+        case .initial:
+            return storyboard.instantiateInitialViewController() as! Self
+        case .identifier(let identifier):
+            return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
+        }
+    }
+}
+
+//PAdding Label
+@IBDesignable class PaddingLabel: UILabel {
+
+    @IBInspectable var topInset: CGFloat = 5.0
+    @IBInspectable var bottomInset: CGFloat = 5.0
+    @IBInspectable var leftInset: CGFloat = 7.0
+    @IBInspectable var rightInset: CGFloat = 7.0
+
+    override func drawText(in rect: CGRect) {
+        let insets = UIEdgeInsets(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
+        super.drawText(in: rect.inset(by: insets))
+    }
+
+    override var intrinsicContentSize: CGSize {
+        let size = super.intrinsicContentSize
+        return CGSize(width: size.width + leftInset + rightInset,
+                      height: size.height + topInset + bottomInset)
+    }
+
+    override var bounds: CGRect {
+        didSet {
+            // ensures this works within stack views if multi-line
+            preferredMaxLayoutWidth = bounds.width - (leftInset + rightInset)
+        }
+    }
+}

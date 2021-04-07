@@ -6,7 +6,15 @@
 //
 
 import Foundation
+import UIKit
 
+protocol Router {
+   func route(
+      to routeID: String,
+      from context: UIViewController,
+      parameters: [String:Any]?
+   )
+}
 enum ResultResponse<T, E: Error> {
     case success(T)
     case failure(E)
