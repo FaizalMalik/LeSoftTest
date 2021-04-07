@@ -17,7 +17,6 @@ class User{
 	var website : String!
 
 
-    
 	/**
 	 * Instantiate the instance using the passed json values to set the properties values
 	 */
